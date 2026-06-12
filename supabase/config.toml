@@ -264,8 +264,19 @@ template = "Your FirstBridge code is {{ `{{ .Code }}` }}"
 max_frequency = "5s"
 
 # Test numbers — always accept OTP 123456, no SMS sent (dev / QA use only)
+# One number per role so you can test each dashboard independently.
+# Format: +91 91 000 0000X  where X = role index (1–9)
 [auth.sms.test_otp]
-919321658482 = "123456"
+919321658482 = "123456"   # aayush (real dev phone)
+919100000001 = "123456"   # student
+919100000002 = "123456"   # scholar
+919100000003 = "123456"   # mentor
+919100000004 = "123456"   # staff
+919100000005 = "123456"   # alumni
+919100000006 = "123456"   # donor
+919100000007 = "123456"   # parent
+919100000008 = "123456"   # school_rep
+919100000009 = "123456"   # visitor
 
 # Configure logged in session timeouts.
 # [auth.sessions]
