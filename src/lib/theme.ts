@@ -106,7 +106,7 @@ export const ROLE_META: Record<UserRole, {
 }
 
 export const ROLE_ROUTES: Record<UserRole, string> = {
-  student:    '/(student)/dashboard',
+  student:    '/(student)',
   scholar:    '/(scholar)/dashboard',
   mentor:     '/(mentor)/dashboard',
   staff:      '/(staff)/dashboard',
